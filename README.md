@@ -14,7 +14,11 @@ Each folder is a standalone Worker with its own `wrangler.toml`.
 
 ## Deploy
 
-Nothing deploys on merge. Deploy one proxy at a time:
+Pushes to `main` auto-deploy only the folders that changed (`.github/workflows/deploy.yml`).
+It uses the org secrets `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`.
+To redeploy by hand, run the "Deploy Workers" workflow from the Actions tab and pick a folder (or `all`).
+
+Manual deploy from a laptop, one proxy at a time:
 
 ```bash
 ./deploy.sh affonso
