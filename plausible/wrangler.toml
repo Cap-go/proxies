@@ -1,0 +1,5 @@
+# Production worker "pls" (Plausible proxy, service worker syntax).
+# The prod worker had no stored wrangler config; check routes in the dashboard before deploying.
+name = "pls"
+main = "worker.js"
+compatibility_date = "2021-10-08"

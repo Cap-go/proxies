@@ -1,0 +1,7 @@
+# Production worker "psthg" (PostHog EU proxy).
+name = "psthg"
+main = "worker.js"
+compatibility_date = "2023-08-23"
+
+[unsafe.metadata.observability]
+enabled = true
